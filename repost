@@ -704,12 +704,6 @@ local L_3_ = {
 				}, {
 					L_129_('UICorner', {
 						CornerRadius = UDim.new(0, 8)
-					}),
-					L_129_('UIGradient', {
-						Rotation = 90,
-						ThemeTag = {
-							Color = 'AcrylicGradient'
-						}
 					})
 				}),
 				L_129_('ImageLabel', {
@@ -2444,14 +2438,6 @@ local L_3_ = {
 				for L_562_forvar0 = 0, 1, 0.1 do
 					table.insert(L_544_, ColorSequenceKeypoint.new(L_562_forvar0, Color3.fromHSV(L_562_forvar0, 1, 1)))
 				end
-				local L_545_, L_546_ = L_512_('UIGradient', {
-					Color = ColorSequence.new(L_544_),
-					Rotation = 90
-				}), L_512_('Frame', {
-					Size = UDim2.new(1, 0, 1, -10),
-					Position = UDim2.fromOffset(0, 5),
-					BackgroundTransparency = 1
-				})
 				local L_547_, L_548_, L_549_ = L_512_('ImageLabel', {
 					Size = UDim2.fromOffset(14, 14),
 					Image = 'http://www.roblox.com/asset/?id=12266946128',
@@ -2505,13 +2491,6 @@ local L_3_ = {
 					L_556_ = L_512_('Frame', {
 						Size = UDim2.fromScale(1, 1)
 					}, {
-						L_512_('UIGradient', {
-							Transparency = NumberSequence.new{
-								NumberSequenceKeypoint.new(0, 0),
-								NumberSequenceKeypoint.new(1, 1)
-							},
-							Rotation = 270
-						}),
 						L_512_('UICorner', {
 							CornerRadius = UDim.new(1, 0)
 						})
