@@ -667,7 +667,7 @@ local L_3_ = {
 			local L_131_ = {}
 			L_131_.Frame = L_129_('Frame', {
 				Size = UDim2.fromScale(1, 1),
-				BackgroundTransparency = 0,
+				BackgroundTransparency = 1,
 				BackgroundColor3 = Color3.fromRGB(255, 255, 255),
 				BorderSizePixel = 0
 			}, {
