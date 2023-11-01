@@ -652,7 +652,7 @@ local L_3_ = {
 				end)
 			end
 			L_116_.SetVisibility = function(L_121_arg0)
-				L_118_.Transparency = L_121_arg0 and 1 or 1
+				L_118_.Transparency = L_121_arg0 and 0.98 or 1
 			end
 			L_116_.Frame = L_119_
 			L_116_.Model = L_118_
@@ -667,7 +667,7 @@ local L_3_ = {
 			local L_131_ = {}
 			L_131_.Frame = L_129_('Frame', {
 				Size = UDim2.fromScale(1, 1),
-				BackgroundTransparency = 1,
+				BackgroundTransparency = 0.9,
 				BackgroundColor3 = Color3.fromRGB(255, 255, 255),
 				BorderSizePixel = 0
 			}, {
@@ -704,6 +704,12 @@ local L_3_ = {
 				}, {
 					L_129_('UICorner', {
 						CornerRadius = UDim.new(0, 8)
+					}),
+					L_129_('UIGradient', {
+						Rotation = 90,
+						ThemeTag = {
+							Color = 'AcrylicGradient'
+						}
 					})
 				}),
 				L_129_('ImageLabel', {
@@ -2438,6 +2444,14 @@ local L_3_ = {
 				for L_562_forvar0 = 0, 1, 0.1 do
 					table.insert(L_544_, ColorSequenceKeypoint.new(L_562_forvar0, Color3.fromHSV(L_562_forvar0, 1, 1)))
 				end
+				local L_545_, L_546_ = L_512_('UIGradient', {
+					Color = ColorSequence.new(L_544_),
+					Rotation = 90
+				}), L_512_('Frame', {
+					Size = UDim2.new(1, 0, 1, -10),
+					Position = UDim2.fromOffset(0, 5),
+					BackgroundTransparency = 1
+				})
 				local L_547_, L_548_, L_549_ = L_512_('ImageLabel', {
 					Size = UDim2.fromOffset(14, 14),
 					Image = 'http://www.roblox.com/asset/?id=12266946128',
@@ -2491,6 +2505,13 @@ local L_3_ = {
 					L_556_ = L_512_('Frame', {
 						Size = UDim2.fromScale(1, 1)
 					}, {
+						L_512_('UIGradient', {
+							Transparency = NumberSequence.new{
+								NumberSequenceKeypoint.new(0, 0),
+								NumberSequenceKeypoint.new(1, 1)
+							},
+							Rotation = 270
+						}),
 						L_512_('UICorner', {
 							CornerRadius = UDim.new(1, 0)
 						})
@@ -4320,13 +4341,13 @@ local L_3_ = {
 			AcrylicMain = Color3.fromRGB(30, 30, 30),
 			AcrylicBorder = Color3.fromRGB(60, 60, 60),
 			AcrylicGradient = ColorSequence.new(Color3.fromRGB(25, 25, 25), Color3.fromRGB(15, 15, 15)),
-			AcrylicNoise = 0.94,
+			AcrylicNoise = 0,
 			TitleBarLine = Color3.fromRGB(65, 65, 65),
 			Tab = Color3.fromRGB(100, 100, 100),
 			Element = Color3.fromRGB(70, 70, 70),
 			ElementBorder = Color3.fromRGB(25, 25, 25),
 			InElementBorder = Color3.fromRGB(55, 55, 55),
-			ElementTransparency = 0.82,
+			ElementTransparency = 0,
 			DropdownFrame = Color3.fromRGB(120, 120, 120),
 			DropdownHolder = Color3.fromRGB(35, 35, 35),
 			DropdownBorder = Color3.fromRGB(25, 25, 25),
