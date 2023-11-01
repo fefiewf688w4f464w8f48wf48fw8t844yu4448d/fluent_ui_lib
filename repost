@@ -509,7 +509,7 @@ local L_3_ = {
 			if L_25_.Window then
 				if L_25_.UseAcrylic then
 					L_25_.Acrylic = L_53_arg1
-					L_25_.Window.AcrylicPaint.Model.Transparency = L_53_arg1 and 0.98 or 1
+					L_25_.Window.AcrylicPaint.Model.Transparency = L_53_arg1 and 1 or 1
 					if L_53_arg1 then
 						L_19_.Enable()
 					else
@@ -520,7 +520,7 @@ local L_3_ = {
 		end
 		function L_25_.ToggleTransparency(L_54_arg0, L_55_arg1)
 			if L_25_.Window then
-				L_25_.Window.AcrylicPaint.Frame.Background.BackgroundTransparency = L_55_arg1 and 0.35 or 0
+				L_25_.Window.AcrylicPaint.Frame.Background.BackgroundTransparency = L_55_arg1 and 0 or 0
 			end
 		end
 		function L_25_.Notify(L_56_arg0, L_57_arg1)
@@ -652,7 +652,7 @@ local L_3_ = {
 				end)
 			end
 			L_116_.SetVisibility = function(L_121_arg0)
-				L_118_.Transparency = L_121_arg0 and 0.98 or 1
+				L_118_.Transparency = L_121_arg0 and 1 or 1
 			end
 			L_116_.Frame = L_119_
 			L_116_.Model = L_118_
@@ -667,7 +667,7 @@ local L_3_ = {
 			local L_131_ = {}
 			L_131_.Frame = L_129_('Frame', {
 				Size = UDim2.fromScale(1, 1),
-				BackgroundTransparency = 0.9,
+				BackgroundTransparency = 0,
 				BackgroundColor3 = Color3.fromRGB(255, 255, 255),
 				BorderSizePixel = 0
 			}, {
@@ -686,7 +686,7 @@ local L_3_ = {
 					CornerRadius = UDim.new(0, 8)
 				}),
 				L_129_('Frame', {
-					BackgroundTransparency = 0.45,
+					BackgroundTransparency = 0,
 					Size = UDim2.fromScale(1, 1),
 					Name = 'Background',
 					ThemeTag = {
