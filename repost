@@ -652,7 +652,7 @@ local L_3_ = {
 				end)
 			end
 			L_116_.SetVisibility = function(L_121_arg0)
-				L_118_.Transparency = L_121_arg0 and 0.98 or 1
+				L_118_.Transparency = L_121_arg0 and 1 or 1
 			end
 			L_116_.Frame = L_119_
 			L_116_.Model = L_118_
@@ -667,7 +667,7 @@ local L_3_ = {
 			local L_131_ = {}
 			L_131_.Frame = L_129_('Frame', {
 				Size = UDim2.fromScale(1, 1),
-				BackgroundTransparency = 0.9,
+				BackgroundTransparency = 1,
 				BackgroundColor3 = Color3.fromRGB(255, 255, 255),
 				BorderSizePixel = 0
 			}, {
